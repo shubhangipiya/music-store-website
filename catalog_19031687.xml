@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "no"?>
+
+<!-- external CSS link -->
+<?xml-stylesheet href="catalog_19031687.css" type="text/css"?>
+
+ <!-- external DTD link -->
+<!DOCTYPE music_store SYSTEM "catalog_19031687.dtd">
+
+ <!-- Schema and root element -->
+<music_store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19031687.xsd">
+
+    <!-- Start Store Header Section -->
+    <store_header>
+        <logo></logo>
+        <store_name>Calm Music Store</store_name>
+
+        <!-- start left nav section -->
+        <nav>Home</nav>
+        <nav>Albums</nav>
+        <!-- end left nav section -->
+        
+        <!-- start right nav section -->
+        <nav1>Contact Us</nav1>
+        <nav1>Login</nav1>
+        
+        <!-- end right nav section -->
+    
+    </store_header>
+    <!-- End Store Header Section -->
+
+    <!-- Start Albums Available Section-->
+    <albums>
+        <!-- rocks section starts -->
+        <rocks>
+            <genre>Rock</genre>
+            <rock music_ID='1' rock_ID='1'>
+                <image id='1'></image>
+                <name>Rock N Roll Train</name>
+                <artist>AC/DC</artist>
+                <released>Released: Aug 28, 2004</released>
+                <price>Price: 500</price>
+            </rock>
+
+            <rock music_ID='2' rock_ID='2'>
+                <image id='2'></image>
+                <name>Three Cheers for Sweet Revenge</name>
+                <artist>My Chemical Romance</artist>
+                <released>Released: June 8, 2004</released>
+                <price>Price: 500</price>
+                
+            </rock>
+
+            <rock music_ID='3' rock_ID='3'>
+                <image id='3'></image>
+                <name>In Utero</name>
+                <artist>Nirvana</artist>
+                <released>Released: sept 13, 1993</released>
+                <price>Price: 500</price>
+                
+            </rock>
+        </rocks>
+        <!-- rocks section ends -->
+
+        <!-- raps section starts -->
+        <raps>
+            <genre>Rap</genre>
+            <rap music_ID='4' rap_ID='4'>
+                <image id='4'></image>
+                <name>The Marshall Mathers LP2</name>
+                <artist>Eminem</artist>
+                <released>Released: Nov 5, 2013</released>
+                <price>Price: 500</price>
+            </rap>
+
+            <rap music_ID='5' rap_ID='5'>
+                <image id='5'></image>
+                <name>Encore</name>
+                <artist>Eminem</artist>
+                <released>Released: Nov 12, 2004</released>
+                <price>Price: 500</price>
+            </rap>
+
+            <rap music_ID='6' rap_ID='6'>
+                <image id='6'></image>
+                <name>Kamikaze</name>
+                <artist>Eminem</artist>
+                <released>Released: Aug 31, 2018</released>
+                <price>Price: 500</price>
+            </rap>
+        </raps>
+        <!-- raps section ends -->
+
+        <!-- hip-hops section starts -->
+        <hip-hops>
+            <genre>Hip-Hop</genre>
+            <hip-hop music_ID='7' hip-hop_ID='7'>
+                <image id='7'></image>
+                <name>Fetty Wap</name>
+                <artist>Fetty Wap</artist>
+                <released>Released: Sept 25, 2015</released>
+                <price>Price: 500</price>
+            </hip-hop>
+
+            <hip-hop music_ID='8' hip-hop_ID='8'>
+                <image id='8'></image>
+                <name>The Chronic</name>
+                <artist>Dr.Dre</artist>
+                <released>Released: Dec 15, 1992</released>
+                <price>Price: 500</price>
+            </hip-hop>
+
+            <hip-hop music_ID='9' hip-hop_ID='9'>
+                <image id='9'></image>
+                <name>The Blueprint</name>
+                <artist>Jay-Z</artist>
+                <released>Released: Sept 11, 2001</released>
+                <price>Price: 500</price>
+            </hip-hop>
+        </hip-hops>
+        <!-- hip-hops section ends -->
+
+        <!-- jazzs section starts -->
+        <jazzs>
+            <genre>Jazz</genre>
+            <jazz music_ID='10' jazz_ID='10'>
+                <image id='10'></image>
+                <name>Bird and Diz</name>
+                <artist>Charlie Parker &amp; Dizzy Gillespie</artist>
+                    <released>Released: 1952</released>
+                <price>Price: 500</price>
+            </jazz>
+
+            <jazz music_ID='11' jazz_ID='11'>
+                <image id='11'></image>
+                <name>Cole Porter in a Modern Mood</name>
+                <artist>Randy Weston</artist>
+                <released>Released: 1955</released>
+                <price>Price: 11</price>
+            </jazz>
+
+            <jazz music_ID='12' jazz_ID='12'>
+                <image id='12'></image>
+                <name>Brian Wilson Reimagines Gershwin</name>
+                <artist>Brian Wilson</artist>
+                <released>Released: Aug 17, 2010</released>
+                <price>Price: 500</price>
+            </jazz>
+        </jazzs>
+        <!-- jazzs section ends -->
+
+        <!-- pops section starts -->
+        <pops>
+            <genre>Pop</genre>
+            <pop music_ID='13' pop_ID='13'>
+                <image id='13'></image>
+                <name>Evolve</name>
+                <artist>Imagine Dragons</artist>
+                <released>Released: June 13, 2017</released>
+                <price>Price: 500</price>
+            </pop>
+
+            <pop music_ID='14' pop_ID='14'>
+                <image id='14'></image>
+                <name>The Fame</name>
+                <artist>Lady Gaga</artist>
+                <released>Released: Aug 19, 2008</released>
+                <price>Price: 500</price>
+            </pop>
+
+            <pop music_ID='15' pop_ID='15'>
+                <image id='15'></image>
+                <name>Divide</name>
+                <artist>Ed Sheeran</artist>
+                <released>Released: Mar 3, 2017</released>
+                <price>Price: 500</price>
+            </pop>
+        </pops>
+        <!-- pops section ends -->
+
+        <!-- cms section starts -->
+        <cms>
+            <genre>Country Music</genre>
+            <cm music_ID='16' cm_ID='16'>
+                <image id='16'></image>
+                <name>Traveller</name>
+                <artist>Chris Stapleton</artist>
+                <released>Released: May 5, 2015</released>
+                <price>Price: 500</price>
+            </cm>
+
+            <cm music_ID='17' cm_ID='17'>
+                <image id='17'></image>
+                <name>The Lemonade Stand</name>
+                <artist>Tenille Townes</artist>
+                <released>Released: June 26, 2020</released>
+                <price>Price: 500</price>
+            </cm>
+
+            <cm music_ID='18' cm_ID='18'>
+                <image id='18'></image>
+                <name>Ordinary</name>
+                <artist>Thomas Hill</artist>
+                <released>Released: June 26, 1995</released>
+                <price>Price: 500</price>
+            </cm>
+        </cms>
+        <!-- cms section ends -->
+
+        <!-- dss section starts -->
+        <dss>
+            <genre>Dubstep</genre>
+            <ds music_ID='19' ds_ID='19'>
+                <image id='19'></image>
+                <name>Ghost EP</name>
+                <artist>CryWolf</artist>
+                <released>Released: June 26, 2010</released>
+                <price>Price: 500</price>
+            </ds>
+
+            <ds music_ID='20' ds_ID='20'>
+                <image id='20'></image>
+                <name>Rush</name>
+                <artist>Wilkinson x Dimension</artist>
+                <released>Released: May 15, 2015</released>
+                <price>Price: 500</price>
+            </ds>
+
+            <ds music_ID='21' ds_ID='21'>
+                <image id='21'></image>
+                <name>Annihilation</name>
+                <artist>Apashe X Jaykode</artist>
+                <released>Released: Feb 6, 2011</released>
+                <price>Price: 500</price>
+            </ds>
+        </dss>
+        <!-- dss sectin ends -->
+    </albums>
+
+    <!-- End Albums Available Section -->
+	
+
+    <!-- Start Footer Section-->
+    <store_footer>
+        <addressLogo></addressLogo>
+        <contactLogo></contactLogo>
+        <websiteLogo></websiteLogo>
+        <emailLogo></emailLogo>
+        <address>Lazimpat,Kathmandu</address>
+        <contact>01-514121</contact>
+        <website>www.calmmusicstore.com</website>
+        <email>calmmusistore@gmail.com</email>
+    </store_footer>
+    <!-- End Footer Section-->
+
+
+
+</music_store>

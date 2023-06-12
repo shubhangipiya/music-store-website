@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT music_store (store_header,albums,store_footer)>
+<!ATTLIST music_store xmlns:xsi CDATA #REQUIRED 
+  xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+
+<!ELEMENT store_header (logo,store_name,nav+,nav1+)>
+<!ATTLIST store_header
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT albums (rocks,raps,hip-hops,jazzs,pops,cms,dss)>
+<!ATTLIST albums
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT store_footer (addressLogo,contactLogo,websiteLogo,emailLogo,
+                        address,contact,website,email)>
+<!ATTLIST store_footer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT logo EMPTY>
+<!ATTLIST logo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT store_name (#PCDATA)>
+<!ATTLIST store_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nav (#PCDATA)>
+<!ATTLIST nav
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nav1 (#PCDATA)>
+<!ATTLIST nav1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rocks (genre,rock+)>
+<!ATTLIST rocks
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT raps (genre,rap+)>
+<!ATTLIST raps
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT hip-hops (genre,hip-hop+)>
+<!ATTLIST hip-hops
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT jazzs (genre,jazz+)>
+<!ATTLIST jazzs
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT pops (genre,pop+)>
+<!ATTLIST pops
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT cms (genre,cm+)>
+<!ATTLIST cms
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT dss (genre,ds+)>
+<!ATTLIST dss
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT addressLogo EMPTY>
+<!ATTLIST addressLogo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT contactLogo EMPTY>
+<!ATTLIST contactLogo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT websiteLogo EMPTY>
+<!ATTLIST websiteLogo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT emailLogo EMPTY>
+<!ATTLIST emailLogo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT contact (#PCDATA)>
+<!ATTLIST contact
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT website (#PCDATA)>
+<!ATTLIST website
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rock (image,name,artist,released,price)>
+<!ATTLIST rock
+  xmlns CDATA #FIXED ''
+  music_ID CDATA #REQUIRED
+  rock_ID CDATA #REQUIRED>
+
+<!ELEMENT rap (image,name,artist,released,price)>
+<!ATTLIST rap
+  xmlns CDATA #FIXED ''
+  music_ID CDATA #REQUIRED
+  rap_ID CDATA #REQUIRED>
+
+<!ELEMENT hip-hop (image,name,artist,released,price)>
+<!ATTLIST hip-hop
+  xmlns CDATA #FIXED ''
+  hip-hop_ID CDATA #REQUIRED
+  music_ID CDATA #REQUIRED>
+
+<!ELEMENT jazz (image,name,artist,released,price)>
+<!ATTLIST jazz
+  xmlns CDATA #FIXED ''
+  jazz_ID CDATA #REQUIRED
+  music_ID CDATA #REQUIRED>
+
+<!ELEMENT pop (image,name,artist,released,price)>
+<!ATTLIST pop
+  xmlns CDATA #FIXED ''
+  music_ID CDATA #REQUIRED
+  pop_ID CDATA #REQUIRED>
+
+<!ELEMENT cm (image,name,artist,released,price)>
+<!ATTLIST cm
+  xmlns CDATA #FIXED ''
+  cm_ID CDATA #REQUIRED
+  music_ID CDATA #REQUIRED>
+
+<!ELEMENT ds (image,name,artist,released,price)>
+<!ATTLIST ds
+  xmlns CDATA #FIXED ''
+  ds_ID CDATA #REQUIRED
+  music_ID CDATA #REQUIRED>
+
+<!ELEMENT genre (#PCDATA)>
+<!ATTLIST genre
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT artist (#PCDATA)>
+<!ATTLIST artist
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT released (#PCDATA)>
+<!ATTLIST released
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+  xmlns CDATA #FIXED ''>

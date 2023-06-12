@@ -1,0 +1,275 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="music_store">
+    <xs:annotation>
+      <xs:documentation>external CSS link  End Footer Section</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="store_header">
+          <xs:annotation>
+            <xs:documentation>Start Store Header Section  end right nav section</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="logo"/>
+              <xs:element type="xs:string" name="store_name"/>
+              <xs:element type="xs:string" name="nav" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>start left nav section</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element type="xs:string" name="nav1" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>end left nav section  start right nav section</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="albums">
+          <xs:annotation>
+            <xs:documentation>End Store Header Section  Start Albums Available Section dss sectin ends</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rocks">
+                <xs:annotation>
+                  <xs:documentation>rocks section starts</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element name="rock" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="image">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="artist"/>
+                          <xs:element type="xs:string" name="released"/>
+                          <xs:element type="xs:string" name="price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="music_ID" use="optional"/>
+                        <xs:attribute type="xs:byte" name="rock_ID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="raps">
+                <xs:annotation>
+                  <xs:documentation>rocks section ends  raps section starts</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element name="rap" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="image">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="artist"/>
+                          <xs:element type="xs:string" name="released"/>
+                          <xs:element type="xs:string" name="price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="music_ID" use="optional"/>
+                        <xs:attribute type="xs:byte" name="rap_ID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="hip-hops">
+                <xs:annotation>
+                  <xs:documentation>raps section ends  hip-hops section starts</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element name="hip-hop" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="image">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="artist"/>
+                          <xs:element type="xs:string" name="released"/>
+                          <xs:element type="xs:string" name="price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="music_ID" use="optional"/>
+                        <xs:attribute type="xs:byte" name="hip-hop_ID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="jazzs">
+                <xs:annotation>
+                  <xs:documentation>hip-hops section ends  jazzs section starts</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element name="jazz" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="image">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="artist"/>
+                          <xs:element type="xs:string" name="released"/>
+                          <xs:element type="xs:string" name="price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="music_ID" use="optional"/>
+                        <xs:attribute type="xs:byte" name="jazz_ID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="pops">
+                <xs:annotation>
+                  <xs:documentation>jazzs section ends  pops section starts</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element name="pop" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="image">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="artist"/>
+                          <xs:element type="xs:string" name="released"/>
+                          <xs:element type="xs:string" name="price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="music_ID" use="optional"/>
+                        <xs:attribute type="xs:byte" name="pop_ID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="cms">
+                <xs:annotation>
+                  <xs:documentation>pops section ends  cms section starts</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element name="cm" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="image">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="artist"/>
+                          <xs:element type="xs:string" name="released"/>
+                          <xs:element type="xs:string" name="price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="music_ID" use="optional"/>
+                        <xs:attribute type="xs:byte" name="cm_ID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dss">
+                <xs:annotation>
+                  <xs:documentation>cms section ends  dss section starts</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element name="ds" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="image">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="artist"/>
+                          <xs:element type="xs:string" name="released"/>
+                          <xs:element type="xs:string" name="price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="music_ID" use="optional"/>
+                        <xs:attribute type="xs:byte" name="ds_ID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="store_footer">
+          <xs:annotation>
+            <xs:documentation>End Albums Available Section  Start Footer Section</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="addressLogo"/>
+              <xs:element type="xs:string" name="contactLogo"/>
+              <xs:element type="xs:string" name="websiteLogo"/>
+              <xs:element type="xs:string" name="emailLogo"/>
+              <xs:element type="xs:string" name="address"/>
+              <xs:element type="xs:string" name="contact"/>
+              <xs:element type="xs:anyURI" name="website"/>
+              <xs:element type="xs:string" name="email"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

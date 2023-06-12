@@ -1,0 +1,485 @@
+/* page css */
+music_store{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    overflow: scroll;
+}
+/* logo */
+logo{
+    content: url(./assets/logo.jpg);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position:absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+/* store name */
+store_name{
+    font-family: script;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+/* store name glow animation */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px goldenrod, 0 0 40px goldenrod, 0 0 50px goldenrod, 0 0 60px goldenrod, 0 0 70px goldenrod;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fa1387, 0 0 40px #fa1387, 0 0 50px #fa1387, 0 0 60px #fa1387, 0 0 70px #fa1387, 0 0 80px #fa1387;
+  }
+}
+/* store name screen size responsive */
+@media screen and (min-width: 480px) {
+    store_name {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    store_name {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    store_name {
+      font-size: 3.5rem;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    store_name {
+      font-size: 4rem;
+    }
+  }
+/* leftside navigation bar */
+nav{
+    color: pink;
+	font-family: ui-sans-serif;
+    padding-left: 5rem;
+    font-size: 3rem;
+}
+/* leftside navigation bar responsive */
+@media screen and (min-width: 480px) {
+    nav {
+      font-size: 3rem;
+      padding-left: 3rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    nav {
+      font-size: 3rem;
+      padding-left: 4rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    nav {
+      font-size: 2rem;
+      padding-left: 3rem;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    nav {
+      font-size: 2rem;
+      padding: 5rem;
+    }
+  }
+/* rightside navigation bar */
+nav1{
+    color: pink;
+	font-family: ui-sans-serif;
+    font-size: 3rem;
+    float: right;
+    padding-right: 5rem;
+}
+/* leftside navigation bar responsive */
+@media screen and (min-width: 480px) {
+    nav1 {
+      font-size: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    nav1 {
+      font-size: 3rem;
+      padding-right: 4rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    nav1 {
+      font-size: 2rem;
+      padding-right: 3rem;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    nav1 {
+      font-size: 2rem;
+      padding-right: 5rem ;
+    }
+  }
+/* footer section */
+store_footer{
+    color: pink;
+	  font-family: ui-sans-serif;
+    font-size: 25px;
+    display: block;
+}
+
+/*aligning the footer contents*/
+address{
+  margin-left: 8%;
+}
+
+contact{
+  margin-left: 7%;
+}
+
+website{
+  margin-left: 7%;
+}
+
+
+email{
+  margin-left: 2%;
+}
+
+
+
+/*footer section logo*/
+addressLogo{
+  content: url(images/22.png);
+  height: 80px;
+  width: 80px;
+  margin-left: 12%;
+}
+
+contactLogo{
+  content: url(images/23.png);
+  height: 80px;
+  width: 80px;
+  margin-left: 15%;
+}
+websiteLogo{
+  content: url(images/24.png);
+  height: 80px;
+  width: 80px;
+  margin-left: 15%;
+}
+emailLogo{
+  content: url(images/25.png);
+  height: 80px;
+  width: 80px;
+  margin-left: 17%;
+}
+  
+
+/* albus section */
+albums{
+    display:block;
+    padding: 10px; 
+    margin-left: 5px;
+}
+/* albums artist and name section */
+name, artist, released{
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+/* albums content section */
+rock, jazz, pop, hip-hop, cm, ds, rap{
+    display: inline-block;
+    background-color: black;
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 25px;
+    border: 2px solid cyan;
+    transition: transform .3s ease;
+}
+@media screen and (min-width: 480px) {
+    rock, jazz, pop, hip-hop, cm, ds, rap {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    rock, jazz, pop, hip-hop, cm, ds, rap {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    rock, jazz, pop, hip-hop, cm, ds, rap {
+      padding: 5rem;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    rock, jazz, pop, hip-hop, cm, ds, rap {
+      padding: 2rem;
+    }
+  }
+
+  rocks, jazzs, pops, hip-hops, cms, dss, raps{
+    display: inline-block;
+    background-color: black;
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 3px solid cyan;
+    transition: transform .3s ease;
+}
+@media screen and (min-width: 480px) {
+    rocks, jazzs, pops, hip-hops, cms, dss, raps {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    rocks, jazzs, pops, hip-hops, cms, dss, raps {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    rocks, jazzs, pops, hip-hops, cms, dss, raps {
+      padding: 3rem;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    rocks, jazzs, pops, hip-hops, cms, dss, raps {
+      padding: 2rem;
+    }
+  }
+
+/* price section */
+price{
+    display:block;
+    font-size:20px;
+    text-align: center;
+    color: white;
+}
+/* genre section */
+genre{
+    text-align: left;
+	font-family:ui-sans-serif;
+    width: 30%;
+    display: block;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    color: pink;
+}
+/* genere hovering */
+genre:hover{
+    color:cyan;
+}
+
+image[id='1']{
+    content: url(images/rock1.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    
+
+}
+image[id='2']{
+    content: url(images/rock2.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: 30px;
+    margin-right: 80px;
+    border-radius: 10px;
+    
+}
+image[id='3']{
+    content: url(images/rock3.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='4']{
+    content: url(images/rap1.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='5']{
+    content: url(images/rap2.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='6']{
+    content: url(images/rap3.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='7']{
+    content: url(images/hip-hop1.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='8']{
+    content: url(images/hip-hop2.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='9']{
+    content: url(images/hip-hop3.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='10']{
+    content: url(images/jazz1.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='11']{
+    content: url(images/jazz2.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='12']{
+    content: url(images/jazz3.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='13']{
+    content: url(images/pop1.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='14']{
+    content: url(images/pop2.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='15']{
+    content: url(images/pop3.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='16']{
+    content: url(images/cm1.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='17']{
+    content: url(images/cm2.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='18']{
+    content: url(images/cm3.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='19']{
+    content: url(images/ds1.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='20']{
+    content: url(images/ds2.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+image[id='21']{
+    content: url(images/ds3.jpg);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+/* image hovering */
+image:hover{
+  transition: transform .3s ease;
+  transform: scale(1.18);
+}
